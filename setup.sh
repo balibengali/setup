@@ -2,6 +2,12 @@
 # Simple setup.sh for configuring Ubuntu 12.04 LTS EC2 instance
 # for headless setup. 
 
+#Added by Shuhan
+Sudo apt-get install git
+# Install git-core and sqlite
+sudo apt-get install -y git-core
+sudo apt-get install -y sqlite3
+
 # Install nvm: node-version manager
 # https://github.com/creationix/nvm
 sudo apt-get install -y git
@@ -46,3 +52,6 @@ ln -sb dotfiles/.bashrc .
 ln -sb dotfiles/.bashrc_custom .
 ln -sf dotfiles/.emacs.d .
 
+#install npm and bower
+npm install
+npm install -g bower
